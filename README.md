@@ -69,17 +69,17 @@ customer_churn_ml/
 git clone https://github.com/SanduniDisanayakaCS/churn-prediction-api.git
 cd churn-prediction-api
 
-✅ 2. Set up environment
+## ✅ 2. Set up environment
 
 python -m venv venv
 .\venv\Scripts\activate    # Windows
 pip install -r requirements.txt
 
-✅ 3. Launch the API
+## ✅ 3. Launch the API
 
 uvicorn app.predict_api:app --reload
 
-Open Swagger UI at:
+## Open Swagger UI at:
 👉 http://127.0.0.1:8000/docs
 
 🔍 Test Prediction
@@ -89,18 +89,18 @@ Open Swagger UI at:
   "features": [0, 1, 0, 1, 0, 45, 1, 0, 70.7, 151.65, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1]
 }
 
-✅ Sample Response
+## ✅ Sample Response
 
 {
   "churn_prediction": 1
 }
 
-📊 Model Evaluation
+## 📊 Model Evaluation
 Metric	Logistic Regression	Random Forest
 Accuracy	79%	79%
 AUC Score	0.83	0.82
 
-💡 Author
+## 💡 Author
 Sanduni Disanayaka
 🔗 GitHub: https://github.com/SanduniDisanayakaCS/churn-prediction-api
 🔗 App: https://churn-prediction-api-cxkoo7ezenesva7zrr2nyd.streamlit.app/
