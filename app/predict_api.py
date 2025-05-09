@@ -26,3 +26,4 @@ def predict_churn(data: CustomerData):
     x_scaled = scaler.transform(x_input)  # If not already scaled
     pred = model.predict(x_scaled)
     return {"churn_prediction": int(pred[0])}
+
